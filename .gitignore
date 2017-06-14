@@ -38,7 +38,7 @@ testem.log
 /e2e/*.map
 
 # src
-/src/*
+
 
 
 # System Files
