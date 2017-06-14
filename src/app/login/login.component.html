@@ -1,0 +1,28 @@
+
+<form [formGroup]="form" >
+    <md-input-container class="example-full-width">
+        <input mdInput 
+        formControlName="username"
+        placeholder="Username">
+    </md-input-container>
+
+    <p>
+
+    <md-input-container class="example-full-width">
+        <input mdInput type="password"
+        formControlName="password"
+         placeholder="Password">
+    </md-input-container>
+    <p>
+
+    <md-checkbox color="primary">Remember</md-checkbox>
+    <p>
+
+
+    <button class="example-full-width"
+         md-raised-button color="primary"
+         type="submit"
+         [disabled]="!form.valid"
+         (click)="login()">Login</button>
+</form>
+
