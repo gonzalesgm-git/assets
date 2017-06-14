@@ -31,7 +31,7 @@ export class LoginComponent {
 
     login(): void {
 
-        this._router.navigate(['/home']);
+        this._router.navigate(['/test']);
         
     }
 

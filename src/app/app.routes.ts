@@ -4,11 +4,13 @@ import {Routes, RouterModule} from '@angular/router';
 import { LoginComponent } from '../app/login/login.component';
 import { PageNotFoundComponent } from '../app/login/page-not-found.component';
 
+const tenant = 'microsoft'
+
 
 export const routes: Routes = [
   // app will be added at runtime
-  { path: '', component: LoginComponent },
-    { path: 'home', loadChildren: 'app/aaw-main/aaw.module#AawModule' }
+    { path: '', component: LoginComponent },
+    { path: '', loadChildren: 'app/main/aaw.module#AawModule' }
 ];
 
 export const routeComponents: ModuleWithProviders =  RouterModule.forRoot(routes);
