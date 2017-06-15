@@ -30,8 +30,8 @@ export class LoginComponent {
     }
 
     login(): void {
-
-        this._router.navigate(['/test']);
+        let currentTenant: string = 'microsoft'
+        this._router.navigate([currentTenant, 'test']);
         
     }
 

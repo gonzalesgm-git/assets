@@ -5,7 +5,9 @@
     "module": "es2015",
     "baseUrl": "",
     "types": [],
-     "experimentalDecorators": true
+    "experimentalDecorators": true,
+     "allowJs": true
+     
   },
   "exclude": [
     "test.ts",

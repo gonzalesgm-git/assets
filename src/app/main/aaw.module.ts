@@ -5,17 +5,14 @@ import { RouterModule }   from '@angular/router';
 import { HomeComponent } from './home.component';
 import { TestComponent } from './test.component';
 
-import { APP_BASE_HREF, Location } from '@angular/common';
-
-
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild([
       
-       { path: 'home', component: HomeComponent},
-       { path: 'test', component: TestComponent}
+       { path: ':tenant/home', component: HomeComponent},
+       { path: ':tenant/test', component: TestComponent}
       
     ])
   ],
@@ -24,8 +21,9 @@ import { APP_BASE_HREF, Location } from '@angular/common';
     TestComponent
   ],
   providers: [
- 
+   
   ]
 })
 export class AawModule {
+ 
 }

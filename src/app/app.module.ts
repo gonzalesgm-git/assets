@@ -37,10 +37,10 @@ import { PageNotFoundComponent } from './login/page-not-found.component';
   ],
 
   providers: [
-    {
-        provide: APP_BASE_HREF,
-        useFactory: setCurrentTenant // setting the current tenant here
-    },
+    // {
+    //     provide: APP_BASE_HREF,
+    //     useFactory: setCurrentTenant // setting the current tenant here
+    // },
   ],
   bootstrap: [AppComponent]
   
